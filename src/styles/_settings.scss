@@ -1,0 +1,50 @@
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+.container__layout{
+    position: relative;
+    display: flex;
+}
+
+.container__layout__main {
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+    #infos {
+        display: none;
+    }
+
+    .container {
+        width: 100%!important;
+    }
+
+    nav .container {
+        width: 93%!important;
+    }
+
+    .container__layout__main {
+        width: 100%!important;
+    }
+
+    nav input {
+        display: none;
+    } 
+
+    #feed, #storys {
+        max-width: 600px!important;
+        margin: 0 auto;
+    }
+  }

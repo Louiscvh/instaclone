@@ -1,0 +1,127 @@
+html {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+.container__layout {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__layout__main {
+  width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+  #infos {
+    display: none;
+  }
+  .container {
+    width: 100% !important;
+  }
+  nav .container {
+    width: 93% !important;
+  }
+  .container__layout__main {
+    width: 100% !important;
+  }
+  nav input {
+    display: none;
+  }
+  #feed, #storys {
+    max-width: 600px !important;
+    margin: 0 auto;
+  }
+}
+
+nav {
+  height: 54px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav .container {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .logo {
+  height: 30px;
+  width: 103px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+nav .container input {
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px;
+  width: 200px;
+}
+
+nav .container svg, nav .container .nav__icons img {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+nav .container .nav__icons__profil {
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+}
+
+#storys {
+  background-color: white;
+  border: 1px solid lightgray;
+  max-width: 600px;
+  height: 100px;
+  margin-top: 80px;
+}
+
+#feed {
+  max-width: 600px;
+  margin-top: 25px;
+  height: 2000px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+#infos {
+  width: 300px;
+  margin-top: 80px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid lightgray;
+  position: fixed;
+  -webkit-transform: translateX(195%);
+          transform: translateX(195%);
+}
+/*# sourceMappingURL=styles.css.map */
